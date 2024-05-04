@@ -9,16 +9,14 @@ load_dotenv()
 GOOGLE_API_KEY=os.getenv('GOOGLE_API_KEY')
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 
-message=[{"role": "system", "content":instruction}]
+def ask_bot(user_message):
+    messages=[{"role": "system", "content":instruction }, 
+            {"role": "user", "content": user_message}]  
 
-def ask_bot(message):
     llm = ChatGoogleGenerativeAI(model="gemini-pro")
+        
+    respones = llm.invoke(messages)
     
-    respone=llm.invoke(message)
-    
-    return respone.content
+    return respones.content
 
-if __name__ == "__main__":
-    print("Welcome to the chat bot!")
-    message=ask_bot("what is a meaning of large language models?")
-    print(message)
+
