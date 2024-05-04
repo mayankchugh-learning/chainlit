@@ -39,4 +39,16 @@ pip install chainlit
     clear
     touch .gitignore
     history
+
+ pip install langchain-google-genai
+ pip install langchain_google_genai
+```
+```bash
+
+chainlit hello
+
+
+python
+>>> from dotenv import load_dotenv
+>>> load_dotenv()
 ```
