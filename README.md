@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 
 ## documentation link: https://docs.chainlit.io/get-started/overview
-
+## https://github.com/Chainlit/chainlit
 
 ```bash
 pip install chainlit
