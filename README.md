@@ -24,3 +24,19 @@ pip install -r requirements.txt
 pip install chainlit
 
 ```
+
+
+```bash
+# commands history
+ git init
+    conda create -p env python=3.8 
+    source activate base
+    clear
+    bash init_setup.sh
+    source activate ./venv
+    clear
+    pip list
+    clear
+    touch .gitignore
+    history
+```
